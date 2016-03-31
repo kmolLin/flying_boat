@@ -11,6 +11,8 @@ import android.widget.TextView;
 import com.example.user.flyboat.Rocker;
 
 public class MainActivity extends Activity {
+
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,8 +22,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         final TextView status = (TextView) findViewById(R.id.status);
 
-        Rocker rocker = (Rocker) findViewById(R.id.rudder);
 
+        Rocker rocker = (Rocker) findViewById(R.id.rudder);
         Bitmap rocker_bg = BitmapFactory.decodeResource(getResources(), R.drawable.rocker_bg1);
         Bitmap rocker_ctrl = BitmapFactory.decodeResource(getResources(), R.drawable.rocker_ctrl);
         rocker.setRockerBg(rocker_bg);

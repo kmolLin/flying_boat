@@ -16,7 +16,7 @@
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="0.48">
+        android:layout_weight="0.51">
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,6 +24,7 @@
             android:text="New Text"
             android:id="@+id/textView"
             android:layout_gravity="center_horizontal" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -32,60 +33,76 @@
         android:layout_height="286dp"
         android:layout_weight="0.48">
 
-       　<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="高度"
-        android:id="@+id/textView2"
-        android:layout_gravity="left|center_horizontal"
-        android:textSize="25dp" />
+       　
 
-        <TextView
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView7"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="電子羅盤"
+                android:id="@+id/textView4"
+                android:layout_gravity="left|center_horizontal"
+                android:singleLine="false"
+                android:textSize="20dp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView6"
+                android:textSize="20dp" />
+
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView6"
-            android:textSize="25dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="加速度"
-            android:id="@+id/textView3"
+            android:text="高度"
+            android:id="@+id/textView2"
             android:layout_gravity="left|center_horizontal"
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
-        <TextView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加速度"
+                android:id="@+id/textView3"
+                android:layout_gravity="left|center_horizontal"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView8"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="陀螺儀"
+                android:id="@+id/textView5"
+                android:layout_gravity="left|center_horizontal"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView7"
-            android:textSize="25dp" />
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="陀螺儀"
-            android:id="@+id/textView5"
-            android:layout_gravity="left|center_horizontal"
-            android:textSize="25dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView8"
-            android:textSize="25dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="電子羅盤"
-            android:id="@+id/textView4"
-            android:layout_gravity="left|center_horizontal"
-            android:singleLine="false"
-            android:textSize="25dp"
-            android:textIsSelectable="false" />
     </LinearLayout>
 
     <LinearLayout
