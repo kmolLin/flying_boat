@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FlagApi">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/src/FlagApi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

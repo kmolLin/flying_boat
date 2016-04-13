@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.2.0_71309330e2d645bd72a060587cebe3faaca87539\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.1.0_d8696bc2e3e4cec1d0333b13ad9737bc06e03797\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.1.0_73eac59e05c8181a4a7fb88ba4e067799c904b1c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1a26354f2de08bcd46fb7c362e7e56edc2ce64cf">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4f942b4fc379dccac5dca4c5a4b6a3fd718fdf7e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\USER\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.2.0_5219af9f29e9561fe3efb94bac5f8d8621a59a4b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-19.1.0_d04b9c7971b54fbfdebabd789244e18c8428ff8d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.2.0_d9cf5b9b20d725eef6f8d3a6210ff9534c63c11e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\src\FlagApi.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="58fe2c9cc204d3eb6d9bb0abbd35a2a7f0862a2b">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\transforms\dex\debug\folders\1000\2\FlagApi_c9c8d35f370b593ebcf030ef48bea919a2b62a3f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="772e36a156f6cdfb2d49c71dc806de5fbaafdfbd">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\FlyBoat\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d4c081946112dc86e96557476fa5e75da3559131\classes.dex" />
+    </item>
+
+</items>
