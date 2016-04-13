@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\USER\Downloads\flying_boat\UARTDriverSample1\uARTDriverSample\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b6d034dbc4f4e57dcd5f4bd5b24cf9a857313342">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\UARTDriverSample1\uARTDriverSample\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_bc40791a7055af519579c14f04a56ce858ddb828\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\USER\Downloads\flying_boat\UARTDriverSample1\uARTDriverSample\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="273ee386dd685129e0c1dd78e134012622d1f5be">
+        <dex dex="C:\Users\USER\Downloads\flying_boat\UARTDriverSample1\uARTDriverSample\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e2700b6f1543c2e77946324d86688fca0aa42192\classes.dex" />
+    </item>
+
+</items>

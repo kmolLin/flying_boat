@@ -42,8 +42,10 @@ public class Rocker extends SurfaceView implements Runnable, SurfaceHolder.Callb
 
     Bitmap rocker_bg, rocker_ctrl;
 
+    private static float numberr;
 
     private RudderListener listener = null; //事件回调接口
+    private RudderListener2 listener2 = null; //事件回调接口
     public static final int ACTION_RUDDER = 1, ACTION_ATTACK = 2; // 1：摇杆事件 2：按钮事件（未实现）
 
 
@@ -179,7 +181,7 @@ public class Rocker extends SurfaceView implements Runnable, SurfaceHolder.Callb
         int len = MathUtils.getLength(mCtrlPoint.x, mCtrlPoint.y, event.getX(), event.getY());
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             //如果屏幕接触点不在摇杆挥动范围内,则不处理
-            //  Log.e("Rocker", "len:"+len);
+          //   Log.e("Rocker", "len:"+len);
             if (len > mWheelRadius) {
                 return true;
             }
@@ -187,6 +189,7 @@ public class Rocker extends SurfaceView implements Runnable, SurfaceHolder.Callb
         if (event.getAction() == MotionEvent.ACTION_UP) {
             if (listener != null) {
                 listener.onSteeringWheelChanged(ACTION_RUDDER, 0);
+                listener2.onSteeringWheelChanged(ACTION_RUDDER, 0);
             }
         }
 
@@ -202,7 +205,9 @@ public class Rocker extends SurfaceView implements Runnable, SurfaceHolder.Callb
             }
             if (listener != null) {
                 float radian = MathUtils.getRadian(mCtrlPoint, new Point((int) event.getX(), (int) event.getY()));
+                int l = (int)MathUtils.getlength(mCtrlPoint, new Point((int) event.getX(), (int) event.getY()));
                 listener.onSteeringWheelChanged(ACTION_RUDDER, Rocker.this.getAngleCouvert(radian));
+                listener2.onSteeringWheelChanged(ACTION_RUDDER, Rocker.this.getlenghabs(l));
             }
         }
         //如果手指离开屏幕，则摇杆返回初始位置
@@ -221,15 +226,30 @@ public class Rocker extends SurfaceView implements Runnable, SurfaceHolder.Callb
             return 180 + (180 - tmp);
         }
     }
+    private int getlenghabs(float l) {
+        int tmp2 = (int)Math.abs(l);
+        if (tmp2>200)
+            tmp2=200;
+
+        return tmp2;
+    }
 
     //回调接口
     public interface RudderListener {
         void onSteeringWheelChanged(int action, int angle);
     }
-
     //设置回调接口
     public void setRudderListener(RudderListener rockerListener) {
         listener = rockerListener;
+    }
+
+    //回调接口2
+    public interface RudderListener2 {
+        void onSteeringWheelChanged(int action, int l);
+    }
+    //设置回调接口2
+    public void setRudderListener2(RudderListener2 rockerListener) {
+        listener2 = rockerListener;
     }
 
 
@@ -254,6 +274,7 @@ class MathUtils {
      */
     public static Point getBorderPoint(Point a, Point b, int cutRadius) {
         float radian = getRadian(a, b);
+        float l = getlength(a,b);
         return new Point(a.x + (int) (cutRadius * Math.cos(radian)), a.y + (int) (cutRadius * Math.sin(radian)));
     }
 
@@ -266,6 +287,13 @@ class MathUtils {
         ang = ang * (b.y < a.y ? -1 : 1);
         return ang;
     }
+    public static float getlength(Point a, Point b) {
+        float lenA = b.x - a.x;
+        float lenB = b.y - a.y;
+        float lenC = (float) Math.sqrt(lenA * lenA + lenB * lenB);
+        return lenC;
+    }
+
 }
 
 /**
